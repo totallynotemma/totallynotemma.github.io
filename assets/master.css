@@ -5,14 +5,14 @@
 body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-}
-
-.stylish_box {
-  height: 100%;
-  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #e64343;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
