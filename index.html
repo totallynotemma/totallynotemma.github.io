@@ -11,12 +11,68 @@
     <meta property="twitter:url" content="https://totallynotemma.github.io">
     <meta property="twitter:title" content="totallynotemma">
     <meta property="twitter:description" content="effort coming soon, plz don't click this">
-    <!-- AAAAAAAAAAAAAH -->
+    <!-- loaldasimkafasf -->
     <link rel="stylesheet" href="assets/master.css">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
   </head>
 
   <body>
-    <h1>Effort Coming Soon</h1>
+    <noscript>
+      I need some handy javascript activation to make this website work, you think you can do that for me?
+    </noscript>
+
+    <main>
+      <header>
+        <h1>totally not emma</h1>
+      </header>
+      <nav>
+        <div class="nav_section">
+          <div class="item_c">
+            <a onclick="openTab('about')" class="nav_item">About</a>
+          </div>
+          <div class="item_c">
+            <div onclick="openTab('profiles')" class="nav_item">Profiles</div>
+          </div>
+        </div>
+        <!-- <div class="nav_section">
+          <div class="item_c">
+            <a onclick="openTab('hire')" class="nav_item">Hire</a>
+          </div>
+        </div> -->
+      </nav>
+      
+      <div class="tab section" id="about" style="display: block;">
+        i am a smol bean, i create things, enjoy!
+      </div>
+
+      <div class="tab section" id="profiles" style="display: none;">
+        <div class="sc_padd">
+          <div class="scroll">
+            <a href="https://github.com/totallynotemma" class="profile_item">Github</a>
+            <hr>
+            <a href="https://invite.gg/totallynotaserver" class="profile_item">totally not a server</a>
+            <a href="https://discord.gg/cG8Gut2spu" class="profile_item">totally not politics</a>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- <div class="tab section" id="hire" style="display: none;">
+        Hire
+      </div> -->
+    </main>
+
+    <script>
+      function openTab(tabName) {
+        var tabName = document.getElementById(tabName)
+        var tab = document.getElementsByClassName('tab')
+
+        for (i=0;i<tab.length;i++) {
+          tab[i].style.display = 'none'
+        }
+
+        tabName.style.display = 'block'
+      }
+    </script>
   </body>
 </html>

@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #525252;
+  border-radius: 10px;
+  border: 2px solid #2b2b2b;
+}
+
+hr {
+  background-color: #ababab;
+  outline: none;
+  border: none;
+  height: 2px;
+  margin: 30px 0;
+}
+
 * {box-sizing: border-box;}
 
 body {
@@ -10,11 +29,161 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e64343;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: #202020;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+main {
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px -3px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  /*  */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #eee;
+  background-color: #804ea8;
+  padding: 50px 40px;
+}
+
+nav {
+  width: 100%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+nav:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.nav_section {
+  display: block;
+  display: flex;
+}
+
+.item_c {
+  padding: 0 15px;
+}
+
+.nav_item {
+  cursor: pointer;
+  display: block;
+  color: #ababab;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: relative;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  transition: 0.2s;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav_item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  transition: 0.2s;
+}
+
+.nav_item:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.nav_item:hover::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transition: 0.2s;
+}
+
+/*  */
+
+.main_content {
+  padding: 20px 40px 40px 40px;
+  color: #eee;
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+}
+
+.section {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 20px 40px 40px 40px;
+  color: white;
+  position: relative;
+}
+
+.sc_padd {
+  position: relative;
+  height: 100%;
+}
+
+.scroll {
+  max-height: min-content;
+  padding: 20px;
+  overflow-y: scroll;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px inset rgba(43, 43, 43, 1);
+}
+
+.profile_item {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ababab;
+  margin-bottom: 5px;
+  background-color: #202020;
+  color: #ababab;
+  text-decoration: none;
+  transition: 0.3s;
+  -webkit-user-drag: none;
+}
+
+.profile_item:hover, .profile_item:active {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
 }
 
 /* I will steal ur kidneys */
