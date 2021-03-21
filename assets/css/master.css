@@ -101,6 +101,7 @@ nav:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .nav_item::before {
   content: '';
   position: absolute;
@@ -117,11 +118,21 @@ nav:hover {
 }
 
 .nav_item:hover::before {
-  top: 0;
   left: 0;
   width: 100%;
   background-color: white;
   transition: 0.2s;
+}
+
+.nav_active {
+  color: white;
+  cursor: default;
+}
+
+.nav_active::before {
+  left: 0;
+  width: 100%;
+  background-color: white;  
 }
 
 /*  */
