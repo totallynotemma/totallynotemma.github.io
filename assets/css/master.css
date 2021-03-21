@@ -166,7 +166,7 @@ nav:hover {
   height: 100%;
 }
 
-.scroll {
+#scroll {
   max-height: min-content;
   padding: 20px;
   overflow-y: scroll;
@@ -175,7 +175,10 @@ nav:hover {
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 0 10px inset rgba(43, 43, 43, 1);
+}
+
+.isScrolled {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .profile_item {
@@ -207,7 +210,7 @@ nav:hover {
     border-radius: 0;
   }
 
-  .scroll {
+  #scroll {
     padding: 0;
   }
 }

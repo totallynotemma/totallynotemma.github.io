@@ -14,3 +14,14 @@ function openTab(tabName, e) {
   tabName.style.display = 'block'
   e.currentTarget.classList.add('nav_active')
 }
+
+document.getElementById('scroll').onscroll = function () {
+  var scrollElement = document.getElementById('scroll')
+  var nav = document.getElementsByTagName('nav')[0]
+
+  if (document.getElementById('scroll').scrollTop > 0) {
+    nav.classList.add('isScrolled')
+  } else (
+    nav.classList.remove('isScrolled')
+  )
+}
